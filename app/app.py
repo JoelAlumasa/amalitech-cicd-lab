@@ -6,9 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return jsonify({
-        "message": "Hello from CI/CD Pipeline!",
+        "message": "🚀 CI/CD Pipeline is AMAZING!",
         "status": "success",
-        "version": "1.0"
+        "version": "2.0",
+        "author": "Joel Alumasa"
     })
 
 @app.route('/health')
@@ -19,7 +20,8 @@ def health():
 def info():
     return jsonify({
         "app": "Jenkins CI/CD Demo",
-        "environment": os.getenv("ENV", "development")
+        "environment": os.getenv("ENV", "production"),
+        "deployed_by": "Jenkins"
     })
 
 if __name__ == '__main__':
