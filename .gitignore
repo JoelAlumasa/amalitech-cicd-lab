@@ -4,3 +4,15 @@ __pycache__/
 *.log
 .env
 venv/
+
+# SSH Keys - NEVER commit these
+*.pem
+*.key
+*:Zone.Identifier
+
+# Large binaries
+*.deb
+*.rpm
+
+# Nested project folders
+jenkins-cicd-project/
