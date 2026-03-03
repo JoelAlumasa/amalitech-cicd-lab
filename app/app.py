@@ -8,7 +8,7 @@ def home():
     return jsonify({
         "message": "🎉 EC2 Jenkins + Webhook = PRODUCTION READY!",
         "status": "success",
-        "version": "5.0",
+        "version": "6.0",
         "author": "Joel Alumasa",
         "jenkins_location": "EC2 Instance"
     })
