@@ -6,10 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return jsonify({
-        "message": "🚀 CI/CD Pipeline is AMAZING!",
+        "message": "🎉 EC2 Jenkins + Webhook = PRODUCTION READY!",
         "status": "success",
-        "version": "2.0",
-        "author": "Joel Alumasa"
+        "version": "5.0",
+        "author": "Joel Alumasa",
+        "jenkins_location": "EC2 Instance"
     })
 
 @app.route('/health')
@@ -21,7 +22,8 @@ def info():
     return jsonify({
         "app": "Jenkins CI/CD Demo",
         "environment": os.getenv("ENV", "production"),
-        "deployed_by": "Jenkins"
+        "deployed_by": "Jenkins on EC2",
+        "auto_triggered": "GitHub Webhook"
     })
 
 if __name__ == '__main__':
