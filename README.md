@@ -4,7 +4,7 @@
 Complete CI/CD pipeline using Jenkins that builds, tests, containerizes, and deploys a Flask web application to EC2.
 
 ## Architecture
-- **Application**: Python Flask REST API
+- **Application**: Python Flask REST API well.
 - **Testing**: pytest unit tests
 - **Containerization**: Docker
 - **CI/CD**: Jenkins Pipeline
